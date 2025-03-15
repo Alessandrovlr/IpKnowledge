@@ -1,5 +1,5 @@
 const express = require("express");
-const puppeteer = require("puppeteer");
+const puppeteer = require('puppeteer-core');
 const cors = require("cors");
 
 const app = express();
@@ -14,7 +14,12 @@ const buscarNoticias = async () => {
     try {
         console.log("Buscando notícias...");
 
-        const browser = await puppeteer.launch({ headless: false });
+        const browser = await puppeteer.launch({
+            executablePath: '/opt/render/.cache/puppeteer/chrome/linux-134.0.6998.35/chrome-linux64/chrome',
+            headless: 'new',
+            args: ['--no-sandbox', '--disable-setuid-sandbox']
+        });
+        
         const page = await browser.newPage();
 
         await page.goto(URL_ANPD, { waitUntil: "networkidle0" });
