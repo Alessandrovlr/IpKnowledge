@@ -8,7 +8,7 @@ const URL_ANPD = "https://www.gov.br/anpd/pt-br/assuntos/noticias";
 
 app.use(cors());
 
-let noticias = [];
+var noticias = [];
 
 const buscarNoticias = async () => {
     try {
