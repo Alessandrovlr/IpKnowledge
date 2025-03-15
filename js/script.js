@@ -1,11 +1,28 @@
-// Fazendo uma requisição para pegar as notícias do servidor
-fetch("http://localhost:3000/noticias")
+document.addEventListener("DOMContentLoaded", function() {
+   noticia(); 
+});
 
-     .then(response => response.json())
-     .then(noticias => {
-         console.log(noticias);  // Agora as notícias são exibidas no console
-     })
-     .catch(error => {
-         console.error("Erro ao buscar notícias:", error);
-     });
+function noticia() {
+    fetch("http://localhost:3000/noticias")
+        .then(response => response.json())
+        .then(noticias => {
+            console.log(noticias); 
+
+            
+            let titulos = document.querySelectorAll("#titulo-noticia");
+            let links = document.querySelectorAll("#link-noticia");
+
+            // Limita as notícias a 11 primeiras
+            noticias.slice(0, 11).forEach((noticia, index) => {
+                if (titulos[index] && links[index]) {
+                    titulos[index].textContent = noticia.titulo;
+                    links[index].innerHTML = `<a href="${noticia.link}" target="_blank">Leia mais</a>`;
+                }
+            });
+        })
+        .catch(error => {
+            console.error("Erro ao buscar notícias:", error);
+        });
+}
+
 

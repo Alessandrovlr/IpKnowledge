@@ -21,21 +21,18 @@ const buscarNoticias = async () => {
 
         const dadosNoticias = await page.evaluate(() => {
             let noticias = [];
-
-            // Seleciona os itens de notícia dentro da classe "noticias listagem-noticias-com-foto"
             const elementos = document.querySelectorAll(".noticias.listagem-noticias-com-foto li");
 
-            console.log("Elementos encontrados:", elementos.length); // Verifique quantos elementos foram encontrados
-
+            console.log("Elementos encontrados:", elementos.length);
             elementos.forEach((elemento) => {
-                // Extraindo o título e o link
-                let titulo = elemento.querySelector(".titulo a")?.textContent.trim(); // Ajuste para pegar o título
-                let link = elemento.querySelector(".titulo a")?.getAttribute("href"); // Pega o link da notícia
+               
+                let titulo = elemento.querySelector(".titulo a")?.textContent.trim();
+                let link = elemento.querySelector(".titulo a")?.getAttribute("href");
 
                 if (titulo && link) {
                     noticias.push({
                         titulo,
-                        link: link.startsWith("http") ? link : `https://www.gov.br${link}` // Completa o link se necessário
+                        link: link.startsWith("http") ? link : `https://www.gov.br${link}`
                     });
                 }
             });
@@ -54,10 +51,10 @@ const buscarNoticias = async () => {
 };
 
 app.get("/noticias", (req, res) => {
-    res.json(noticias); // Retorna as notícias armazenadas
+    res.json(noticias); 
 });
 
 app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);
-    buscarNoticias(); // Atualiza as notícias assim que o servidor é iniciado
+    buscarNoticias(); 
 });
