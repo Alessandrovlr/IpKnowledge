@@ -5,7 +5,7 @@ html {
 body {
     background-color: white;
     margin: 0;
-    font-family: Arial, sans-serif;
+    background-color: #e5fadb;
 }
 
 
@@ -13,11 +13,16 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-around; 
     align-items: center;
     padding: 10px 20px;
-    background-color: white;
+    background-color: #141414;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav h1{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .logoCompleta {
@@ -27,7 +32,7 @@ nav {
     font-size: 20px;
 }
 
-.logoCompleta:hover{
+nav h1:hover{
     color: #B3C853;
 }
 
@@ -45,7 +50,7 @@ nav {
 
 .lista li a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-size: 17px;
     padding: 8px 12px;
     transition: 0.3s;
@@ -70,7 +75,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center; 
-    background-color: #f8f8f8; 
+    background-color: #e5fadb; 
 }
 
 .container {
@@ -79,33 +84,53 @@ nav {
     text-align: center;
 }
 
-h2{
+#title-home{
     font-size: 50px;
     text-align: center;
     margin-bottom: 0px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-h3 {
+.home h3 {
     margin-bottom: 0px;
     font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.listaPerguntas{
+.listaPerguntas p{
     text-align: left;
-    font-size: 17px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
 }
 
-.gradiente{
-    background: linear-gradient(90deg, #00A321, #B3C853);
+.caixa2 {
+    background-color: #fff;
+    width: 780px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.caixa2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.gradiente {
+    background: linear-gradient(90deg, #087020, #93b607);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     font-weight: bold;
-    font-size: 24px; 
-    text-align: center; 
-    max-width: 600px;
-    margin: 0 auto; 
+    font-size: 35px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
 }
+
 
 .respostaSimComImg{
     display: flex;
@@ -121,9 +146,10 @@ h3 {
 }
 
 .titulo-sobre {
-    font-size: 34px;
+    font-size: 40px;
     color: #74ff00;
     margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -144,14 +170,16 @@ h3 {
 
 .subtitulo {
     color: #74ff00;
-    font-size: 25px;
+    font-size: 28px;
     margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .descricao {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.6;
     color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -165,6 +193,7 @@ h3 {
 .botao-container {
     text-align: center;
     margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .botao {
@@ -191,17 +220,24 @@ h3 {
     padding: 20px; 
 }
 
-.metodo h4 {
-    font-size: 28px; 
+.metodo h2 {
+    font-size: 40px; 
     font-weight: bold; 
     color: #333; 
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .metodo p {
     font-size: 16px;
     color: #555; 
     line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+#metodo-descricao{
+    font-size: 25px;
 }
 
 .etapas {
@@ -257,9 +293,10 @@ p {
 
 .titulo-servico{
     margin: 50px;
-    font-size: 28px; 
+    font-size: 40px; 
     font-weight: bold; 
-    color: #333; 
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .servicos{
@@ -276,9 +313,19 @@ p {
 
 }
 
+.caixa-servico h3{
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.caixa-servico p{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
 .caixa-servico{
     background-color: #fff;
-    width: 280px;
+    width: 300px;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -303,11 +350,12 @@ p {
     text-align: center;
 }
 
-.noticia-anpd h3 {
+.noticia-anpd h2 {
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .noticias {
@@ -323,10 +371,11 @@ p {
     transform: scale(1.02);
 }
 
-.noticias h4 {
+.noticias h3 {
     font-size: 18px;
     color: #0077cc;
     margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .noticias p {
@@ -413,10 +462,10 @@ footer {
 .footer-bottom {
     width: 100%;
     text-align: center;
-    margin-top: 40px; /* Aumenta o espaçamento para separação */
+    margin-top: 40px;
     padding-top: 10px;
     border-top: 1px solid #222;
-    flex-basis: 100%; /* Faz com que ocupe toda a largura e vá para baixo */
+    flex-basis: 100%; 
 }
 
 
@@ -427,5 +476,78 @@ footer {
 }
 
 .footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* pagina contatos */
+
+.contatos {
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.contatos h2{
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title-contatos {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #1a1a1a;
+}
+
+.contato-whatsapp,
+.contato-email,
+.contato-linkedin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.contato-whatsapp:hover,
+.contato-email:hover,
+.contato-linkedin:hover {
+    transform: scale(1.02); 
+}
+
+.contato-whatsapp img,
+.contato-email img,
+.contato-linkedin img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.contatos p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.contatos span {
+    font-weight: bold;
+    color: #007bff; 
+}
+
+.contato-linkedin a {
+    font-weight: bold;
+    color: #0077b5; 
+    text-decoration: none;
+}
+
+.contato-linkedin a:hover {
     text-decoration: underline;
 }
