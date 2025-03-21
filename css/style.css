@@ -1,11 +1,13 @@
 html {
     scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
   }
 
 body {
     background-color: white;
     margin: 0;
     background-color: #e5fadb;
+    overflow-x: hidden;
 }
 
 
@@ -119,8 +121,8 @@ nav h1:hover{
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-.gradiente {
-    background: linear-gradient(90deg, #087020, #93b607);
+/* .gradiente {
+    background: linear-gradient(90deg, #012008, #417a30);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -129,7 +131,7 @@ nav h1:hover{
     text-align: left;
     max-width: 800px;
     margin: 0 auto;
-}
+} */
 
 
 .respostaSimComImg{
@@ -397,6 +399,7 @@ footer {
 }
 
 .footer-container {
+    font-family: 'Raleway', sans-serif;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -494,9 +497,9 @@ footer {
 }
 
 .title-contatos {
-    font-size: 2rem;
+    font-size: 40px;
     font-weight: 600;
-    margin-bottom: 40px;
+    margin-bottom: 28px;
     color: #1a1a1a;
 }
 
@@ -533,8 +536,8 @@ footer {
 }
 
 .contatos p {
-    font-size: 1rem;
-    margin: 0;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .contatos span {
@@ -551,3 +554,173 @@ footer {
 .contato-linkedin a:hover {
     text-decoration: underline;
 }
+
+/* responsividade */
+
+@media (max-width: 999px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 15px;
+        position: relative;
+    }
+  
+    .logoCompleta {
+        font-size: 18px;
+    }
+  
+    #imgLogo {
+        width: 50px;
+    }
+  
+    /* Menu Hambúrguer */
+    .hamburguer {
+        display: block;
+        cursor: pointer;
+    }
+  
+    .hamburguer div {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+  
+    .lista {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 15px;
+        background-color: #141414;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+  
+    .lista.show {
+        display: flex;
+    }
+  
+    .lista li a {
+        font-size: 16px;
+        padding: 10px;
+    }
+  
+    .home {
+        padding: 30px 15px;
+        text-align: center;
+        flex-direction: column;
+    }
+  
+    #title-home {
+        font-size: 32px;
+    }
+  
+    .home h3 {
+        font-size: 20px;
+    }
+  
+    .caixa2 {
+        width: 100%;
+        padding: 15px;
+    }
+  
+    .respostaSimComImg {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+  
+    .conteudo {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+  
+    .texto {
+        text-align: center;
+    }
+  
+    .imagem {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    .metodo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+  
+    .caixa, .caixa-servico {
+        width: 100%;
+        max-width: 320px;
+    }
+  
+    .container-servico {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .titulo-servico {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+  
+    .noticia-anpd {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+  
+    .noticia-anpd h2 {
+        font-size: 22px;
+    }
+  
+    .noticias h3 {
+        font-size: 16px;
+    }
+  
+    .noticias p {
+        font-size: 13px;
+    }
+  
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 10px;
+    }
+  
+    .footer-section {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+  
+    .contato-whatsapp,
+    .contato-email,
+    .contato-linkedin {
+        flex-direction: column;
+        gap: 10px;
+    }
+  
+    .contatos h2 {
+        font-size: 28px;
+    }
+  
+    .title-contatos {
+        font-size: 32px;
+    }
+  
+    .contatos p {
+        font-size: 18px;
+    }
+  
+    .footer-bottom {
+        font-size: 14px;
+    }
+  }
+  
