@@ -26,3 +26,7 @@ function noticia() {
 }
 
 
+function toggleMenu() {
+    const menu = document.querySelector('.lista');
+    menu.classList.toggle('show');
+}
