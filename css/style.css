@@ -491,6 +491,11 @@ footer {
     color: #333;
 }
 
+.contato-icon {
+    width: 50px;
+    height: 35px;
+}
+
 .contatos h2{
     font-size: 35px;
     font-family: 'Montserrat', sans-serif;
