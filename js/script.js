@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function noticia() {
-    fetch("https://api-noticias-gnub.onrender.com")
+    fetch("https://api-noticias-gnub.onrender.com/noticias")
         .then(response => response.json())
         .then(noticias => {
             console.log(noticias); 
