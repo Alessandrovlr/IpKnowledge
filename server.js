@@ -18,8 +18,12 @@ const buscarNoticias = async () => {
     try {
         console.log("Buscando notícias...");
         
-        // Realiza a requisição HTTP para pegar a página
-        const { data } = await axios.get(URL_ANPD);
+        // Adiciona o cabeçalho User-Agent para evitar bloqueios
+        const { data } = await axios.get(URL_ANPD, {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+            }
+        });
 
         // Carrega o HTML com o Cheerio para manipulação
         const $ = cheerio.load(data);
