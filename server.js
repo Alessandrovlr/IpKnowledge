@@ -6,7 +6,7 @@ const app = express();
 const PORT = 3000;
 const URL_ANPD = "https://www.gov.br/anpd/pt-br/assuntos/noticias";
 
-app.use(cors());
+app.use(cors({ origin: "*" }));
 
 var noticias = [];
 
@@ -14,7 +14,10 @@ const buscarNoticias = async () => {
     try {
         console.log("Buscando notícias...");
 
-        const browser = await puppeteer.launch({ headless: false });
+        const browser = await puppeteer.launch({
+            headless: "new",
+            args: ["--no-sandbox", "--disable-setuid-sandbox"]
+        });
         const page = await browser.newPage();
 
         await page.goto(URL_ANPD, { waitUntil: "networkidle0" });
