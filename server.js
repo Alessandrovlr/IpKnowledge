@@ -16,6 +16,7 @@ const buscarNoticias = async () => {
 
         const browser = await puppeteer.launch({
             headless: "new",
+            executablePath: puppeteer.executablePath(),  // Isso força o Puppeteer a usar o Chrome que ele mesmo instala
             args: ["--no-sandbox", "--disable-setuid-sandbox"]
         });
         const page = await browser.newPage();
