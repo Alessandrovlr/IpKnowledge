@@ -16,6 +16,7 @@ const buscarNoticias = async () => {
 
         const browser = await puppeteer.launch({
             headless: "new",
+            executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || "/usr/bin/google-chrome-stable",
             args: ["--no-sandbox", "--disable-setuid-sandbox"]
         });
         const page = await browser.newPage();
@@ -58,6 +59,6 @@ app.get("/noticias", (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Servidor rodando em http://localhost:${PORT}`);
+    console.log(`Servidor inicializado`);
     buscarNoticias(); 
 });
