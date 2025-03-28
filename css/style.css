@@ -81,7 +81,7 @@ nav h1:hover{
 }
 
 .container {
-    max-width: 800px;
+    max-width: 700px;
     width: 80%; 
     text-align: center;
 }
@@ -99,17 +99,23 @@ nav h1:hover{
     font-family: 'Montserrat', sans-serif;
 }
 
+ul.listaPerguntas{
+    padding-inline-start:5%;
+    padding-inline-end: 5%;
+}
+
 .listaPerguntas p{
     text-align: left;
     font-size: 20px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
+    color: #000;
 }
 
 .caixa2 {
+    justify-content: center;
     background-color: #fff;
-    width: 780px;
-    padding: 20px;
+    width: 690px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -446,7 +452,7 @@ footer {
     color: #B3C853;
 }
 
-.social-icons {
+/* .social-icons {
     display: flex;
     gap: 10px;
     margin-top: 15px;
@@ -460,7 +466,7 @@ footer {
 
 .social-icons a:hover {
     color: #B3C853;
-}
+} */
 
 .footer-bottom {
     width: 100%;
@@ -616,9 +622,9 @@ footer {
     }
   
     .home {
-        padding: 30px 15px;
         text-align: center;
         flex-direction: column;
+        flex-wrap: nowrap;
     }
   
     #title-home {
@@ -630,8 +636,7 @@ footer {
     }
   
     .caixa2 {
-        width: 100%;
-        padding: 15px;
+        width: 95%;
     }
   
     .respostaSimComImg {
@@ -698,11 +703,26 @@ footer {
         flex-direction: column;
         align-items: center;
         padding: 30px 10px;
+        display: flex;
+        text-align: center;
     }
   
     .footer-section {
         text-align: center;
         margin-bottom: 20px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .footer-section ul {
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+    .footer-section h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
     }
   
     .contato-whatsapp,
@@ -710,6 +730,10 @@ footer {
     .contato-linkedin {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .footer-section p{
+        text-align: center;
     }
   
     .contatos h2 {
@@ -726,6 +750,8 @@ footer {
   
     .footer-bottom {
         font-size: 14px;
+        text-align: center;
+        padding-top: 10px;
     }
   }
   
