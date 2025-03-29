@@ -145,6 +145,13 @@ ul.listaPerguntas{
     margin-bottom: 50px;
 }
 
+#imgRespSim{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
 /* sobre nos */
 
 .sobre-nos {
@@ -400,7 +407,7 @@ footer {
     padding: 50px 20px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     flex-wrap: wrap;
 }
 
@@ -410,7 +417,7 @@ footer {
     width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -624,7 +631,7 @@ footer {
     .home {
         text-align: center;
         flex-direction: column;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
   
     #title-home {
@@ -642,6 +649,7 @@ footer {
     .respostaSimComImg {
         flex-direction: column;
         margin-bottom: 30px;
+        align-items: center;
     }
   
     .conteudo {
@@ -680,11 +688,6 @@ footer {
     .titulo-servico {
         font-size: 30px;
         margin: 20px 0;
-    }
-  
-    .noticia-anpd {
-        margin: 20px 10px;
-        padding: 15px;
     }
   
     .noticia-anpd h2 {
