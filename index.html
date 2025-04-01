@@ -36,21 +36,31 @@
     <section class="home">
         <div class="container">
             <div class="textosHome">
-                <h2 id="title-home">Protega seus <span id="textoVerde">Dados com a IpKnowledge</span> de acordo com a LGPD</h2>
-                <h3>Por que você precisa dos nossos serviços?</h3>
-                <div class="caixa2">
-                    <ul class="listaPerguntas">
-                        <p>Seu condomínio mantém um cadastro de moradores, convidados, terceirizados e fornecedores?</p>
-                        <p>Seu condomínio utiliza biometria para controle de acesso?</p>
-                        <p>Seu condomínio conta com o suporte de uma administradora?</p>
-                    </ul>
+                <h2 id="title-home">Proteja seus <span id="textoVerde">Dados com a IpKnowledge</span> de acordo com a LGPD</h2>
+                <div class="carrossel">
+                    <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
+                    <div class="slides">
+                        <!-- <div class="slide active">
+                        </div> -->
+                        <div class="slide active">
+                            <h3>Por que você precisa dos nossos serviços?</h3>
+                            <p>Seu condomínio mantém um cadastro de moradores, convidados, terceirizados e fornecedores?</p>
+                            <p>Seu condomínio utiliza biometria para controle de acesso?</p>
+                            <p>Seu condomínio conta com o suporte de uma administradora?</p>
+                        </div>
+                        <div class="slide">
+                            <h2>Se respondeu 'sim' a alguma dessas perguntas</h2>
+                            <div class="conteudo-sim">
+                                <p>Seu condomínio precisa estar em conformidade com a LGPD. Mas não se preocupe! Nós auxiliamos seu condomínio a alcançar essa conformidade em apenas um mês.</p>
+                                <div class="imagem-container">
+                                    <img id="imgRespSim" src="./imgs/predio.jpeg" alt="imagem" style="max-width: 290px; margin-top: 20px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="next" onclick="mudarSlide(1)">&#10095;</button>
                 </div>
-                <div class="respostaSimComImg" style="gap: 15px;">
-                    <h2>
-                        Se respondeu 'sim' a alguma dessas perguntas, seu condomínio precisa estar em conformidade com a LGPD. Mas não se preocupe! Nós auxiliamos seu  condomínio a alcançar essa conformidade em apenas um mês.
-                    </h2>
-                    <img id="imgRespSim" src="./imgs/predio.jpeg" alt="imagem" style="max-width: 290px;">
-                </div>
+                
             </div>
         </div>
     </section>
@@ -69,11 +79,11 @@
                     e ajustando processos internos para garantir segurança e privacidade.
                 </p>
             </div>
-            <img class="imagem" src="./imgs/predio.jpeg" alt="Consultoria LGPD">
+            <img class="imagem" src="./imgs/consultoria.jpg" alt="Consultoria LGPD">
         </div>
 
         <div class="conteudo">
-            <img class="imagem" src="./imgs/predio.jpeg" alt="Método em quatro etapas">
+            <img class="imagem" src="./imgs/metodo.png" alt="Método em quatro etapas">
             <div class="texto">
                 <h3 class="subtitulo">Aplicamos um método próprio em quatro etapas, utilizando ferramentas recomendadas pelo governo federal.</h3>
                 <p class="descricao">
@@ -126,7 +136,7 @@
     <!-- pagina serviços -->
 
     <section class="servicos" id="servico">
-        <h2 class="titulo-servico">Serviços e area de atuação</h2>
+        <h2 class="titulo-servico">Serviços e área de atuação</h2>
         <div class="container-servico">
             <div class="caixa-servico">
                 <h3>Aderência de condomínios à LGPD (emexecução)</h3>
@@ -134,12 +144,12 @@
             </div>
                 
             <div class="caixa-servico">
-                <h3>Aderência da área de tecnologia da informação à LGPD (em breve)</h3>
+                <h3 class="servico-breve">Aderência da área de tecnologia da informação à LGPD (em breve)</h3>
                 <p>Empresas de TI precisam adotar práticas de segurança, controle de acessos e criptografia para proteger dados e garantir conformidade com a LGPD.</p>
             </div>
     
             <div class="caixa-servico">
-                <h3>Aderência de clínicas de saúde à LGPD (em breve)</h3>
+                <h3 class="servico-breve">Aderência de clínicas de saúde à LGPD (em breve)</h3>
                 <p>Clínicas armazenam dados sensíveis de pacientes e devem implementar políticas de proteção, consentimento adequado e segurança na gestão dessas informações.</p>
             </div>
         </div>
@@ -180,30 +190,30 @@
             <p class="link-noticia"></p>
         </div>
 
-        <div class="noticias">
+        <!-- <div class="noticias">
             <h3 class="titulo-noticia"></h3>
             <p class="link-noticia"></p>
-        </div>
+        </div> -->
 
-        <div class="noticias">
+        <!-- <div class="noticias">
             <h3 class="titulo-noticia"></h3>
             <p class="link-noticia"></p>
-        </div>
+        </div> -->
 
-        <div class="noticias">
+        <!-- <div class="noticias">
             <h3 class="titulo-noticia"></h3>
             <p class="link-noticia"></p>
-        </div>
+        </div> -->
 
-        <div class="noticias">
+        <!-- <div class="noticias">
             <h3 class="titulo-noticia"></h3>
             <p class="link-noticia"></p>
-        </div>
+        </div> -->
 
-        <div class="noticias">
+        <!-- <div class="noticias">
             <h3 class="titulo-noticia"></h3>
             <p class="link-noticia"></p>
-        </div>
+        </div> -->
         
     </section>
 
@@ -214,17 +224,17 @@
         <p>Envie sua mensagem e vamos trabalhar juntos na conformidade do seu condomínio com a LGPD.</p>
         <div class="contato-whatsapp">
             <ion-icon name="logo-whatsapp" class="contato-icon"></ion-icon>
-            <p>Fale conosco pelo WhatsApp: <span>(48) 99156-9446</span></p>
+            <p class="contatoF">Fale conosco pelo WhatsApp: <span>(48) 99156-9446</span></p>
         </div>
     
         <div class="contato-email">
             <ion-icon name="mail-outline" class="contato-icon"></ion-icon>
-            <p>Envie-nos um e-mail: <span>contato@ipknowledge.com.br</span></p>
+            <p class="contatoF">Envie-nos um e-mail: <span>contato@ipknowledge.com.br</span></p>
         </div>
     
         <div class="contato-linkedin">
             <ion-icon name="logo-linkedin" class="contato-icon"></ion-icon>
-            <p>Conecte-se no LinkedIn: <a href="https://www.linkedin.com/in/jaimemjunior/" target="_blank">linkedin.com/in/jaimemjunior</a></p>
+            <p class="contatoF">Conecte-se no LinkedIn: <a href="https://www.linkedin.com/in/jaimemjunior/" target="_blank">linkedin.com/in/jaimemjunior</a></p>
         </div>
     </section>
 
@@ -233,41 +243,39 @@
     <footer>
         <div class="footer-container">
             <div class="footer-section">
-                <a href="#" style="text-decoration: none;"><h3>IpKnowledge</h3></a>
+                <a href="#" style="text-decoration: none;"><h3>Missão</h3></a>
                 <p>
-                    Somos uma empresa especializada em consultoria para adequação à Lei Geral de Proteção de Dados (LGPD).
-                    Nosso foco é apoiar organizações na implementação de processos e sistemas que atendam a todos os requisitos legais,
-                    garantindo a segurança e privacidade dos dados pessoais.
+                    Adequação à Lei Geral de Proteção de Dados (LGPD). Nosso foco é apoiar organizações na implementação de processos e sistemas que atendam a todos os requisitos legais, garantindo a segurança e privacidade dos dados pessoais.
                 </p>
             
             </div>
     
             <div class="footer-section">
-                <h3>Company</h3>
+                <h3>Ipknowledge</h3>
                 <ul class="footer-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#sobre-nos">Sobre nós</a></li>
-                    <li><a href="#">Suporte</a></li>
-                    <li><a href="#contato">Entre em contato</a></li>
+                    <li><a class="padrao-links" href="#">Home</a></li>
+                    <li><a class="padrao-links" href="#sobre-nos">Sobre nós</a></li>
+                    <li><a class="padrao-links" href="#">Suporte</a></li>
+                    <li><a class="padrao-links" href="#contato">Entre em contato</a></li>
                 </ul>
             </div>
     
             <div class="footer-section">
                 <h3>Serviços</h3>
                 <ul class="footer-links">
-                    <li><a href="#servico">Aderência de condomínios à LGPD</a></li>
-                    <li><a href="#servico">Aderência da área da informação à LGPD</a></li>
-                    <li><a href="#servico">Aderência de clínicas de saúde à LGPD</a></li>
+                    <li><a class="padrao-links" href="#servico">Aderência de condomínios à LGPD</a></li>
+                    <li><a class="servico-breve" href="#servico">Aderência da área da informação à LGPD</a></li>
+                    <li><a class="servico-breve" href="#servico">Aderência de clínicas de saúde à LGPD</a></li>
                 </ul>
             </div>
     
-            <div class="footer-section">
+            <!-- <div class="footer-section">
                 <h3>Legal</h3>
                 <ul class="footer-links">
                     <li><a href="/html/termos.html">Termos & Condições</a></li>
                     <li><a href="/html/politica-privacidade.html">Privacidade & politica</a></li>
                 </ul>
-            </div>
+            </div> -->
         </div>
         
         <div class="footer-bottom">

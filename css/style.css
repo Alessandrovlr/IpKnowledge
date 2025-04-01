@@ -6,12 +6,62 @@ html {
 body {
     background-color: white;
     margin: 0;
-    background-color: #e5fadb;
+    background-color: #edffe9;
     overflow-x: hidden;
 }
 
 
 /* home */
+
+.conteudo-sim{
+    display: flex;
+}
+
+.carrossel {
+    margin-bottom: 50px;
+    margin-top: 20px;
+    position: relative;
+    max-width: 690px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.carrossel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    text-align: start;
+}
+.slide {
+    display: none;
+    padding: 50px;
+}
+.slide.active {
+    display: block;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 30%;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+#imgRespSim {
+    width: 190px;
+    margin-top: 10px;
+}
 
 nav {
     display: flex;
@@ -77,7 +127,6 @@ nav h1:hover{
     display: flex;
     justify-content: center;
     align-items: center; 
-    background-color: #e5fadb; 
 }
 
 .container {
@@ -87,7 +136,7 @@ nav h1:hover{
 }
 
 #title-home{
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     margin-bottom: 0px;
     font-family: 'Montserrat', sans-serif;
@@ -139,12 +188,6 @@ ul.listaPerguntas{
     margin: 0 auto;
 } */
 
-
-.respostaSimComImg{
-    display: flex;
-    margin-bottom: 50px;
-}
-
 #imgRespSim{
     display: flex;
     justify-content: space-around;
@@ -156,7 +199,7 @@ ul.listaPerguntas{
 
 .sobre-nos {
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px 20px;
     background-color: #141414;
 }
 
@@ -199,9 +242,14 @@ ul.listaPerguntas{
 
 
 .imagem {
-    width: 250px;
+    width: 350px;
     height: auto;
     border-radius: 10px;
+}
+
+.imagem-container{
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -305,6 +353,10 @@ p {
 }
 
 /* serviços */
+.servico-breve{
+    color: #6b6b6b;
+    text-decoration: none;
+}
 
 .titulo-servico{
     margin: 50px;
@@ -352,6 +404,7 @@ p {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
+
 
 /* Noticias ANPD */
 
@@ -448,7 +501,7 @@ footer {
     margin-bottom: 10px;
 }
 
-.footer-links a {
+.padrao-links{
     text-decoration: none;
     color: #ccc;
     font-size: 14px;
@@ -526,7 +579,7 @@ footer {
 .contato-linkedin {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 15px;
     margin-bottom: 25px;
     max-width: 600px;
@@ -558,6 +611,11 @@ footer {
     margin-bottom: 20px;
 }
 
+.contatoF{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .contatos span {
     font-weight: bold;
     color: #007bff; 
@@ -565,7 +623,7 @@ footer {
 
 .contato-linkedin a {
     font-weight: bold;
-    color: #0077b5; 
+    color: #007bff; 
     text-decoration: none;
 }
 
@@ -587,7 +645,7 @@ footer {
     .logoCompleta {
         font-size: 18px;
     }
-  
+    
     #imgLogo {
         width: 50px;
     }
@@ -626,6 +684,18 @@ footer {
     .lista li a {
         font-size: 16px;
         padding: 10px;
+    }
+
+    .conteudo-sim{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .carrossel {
+        max-width: 95%;
+    }
+    .prev, .next {
+        padding: 8px;
     }
   
     .home {
