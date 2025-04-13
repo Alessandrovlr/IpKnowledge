@@ -13,51 +13,6 @@ body {
 
 /* home */
 
-.conteudo-sim{
-    display: flex;
-}
-
-.carrossel {
-    margin-bottom: 50px;
-    margin-top: 20px;
-    position: relative;
-    max-width: 690px;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.carrossel:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-}
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    text-align: start;
-}
-.slide {
-    display: none;
-    padding: 50px;
-}
-.slide.active {
-    display: block;
-}
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 100px;
-}
-.prev { left: 10px; }
-.next { right: 10px; }
-
 #imgRespSim {
     width: 190px;
     margin-top: 10px;
@@ -120,7 +75,9 @@ nav h1:hover{
 .textosHome {
     display: flex;
     flex-direction: column;
-    gap: 15px; 
+    gap: 15px;
+    text-align: start;
+    margin-bottom: 15%;
 }
 
 .home {
@@ -138,7 +95,7 @@ nav h1:hover{
 #title-home{
     font-size: 40px;
     text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: 8%;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -249,7 +206,8 @@ ul.listaPerguntas{
 
 .imagem-container{
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    margin-bottom: 30px;
 }
 
 
@@ -738,7 +696,7 @@ footer {
     .texto {
         text-align: center;
     }
-  
+    
     .imagem {
         width: 90%;
         max-width: 270px;
