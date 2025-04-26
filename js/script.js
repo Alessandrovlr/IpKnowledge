@@ -50,3 +50,12 @@ function toggleMenu() {
     const menu = document.querySelector('.lista');
     menu.classList.toggle('show');
 }
+
+let slideIndex = 0;
+
+function mudarSlide(n) {
+    const slides = document.querySelectorAll(".slide");
+    slides[slideIndex].classList.remove("active");
+    slideIndex = (slideIndex + n + slides.length) % slides.length;
+    slides[slideIndex].classList.add("active");
+}

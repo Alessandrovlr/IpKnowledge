@@ -6,12 +6,17 @@ html {
 body {
     background-color: white;
     margin: 0;
-    background-color: #e5fadb;
+    background-color: #edffe9;
     overflow-x: hidden;
 }
 
 
 /* home */
+
+#imgRespSim {
+    width: 190px;
+    margin-top: 10px;
+}
 
 nav {
     display: flex;
@@ -70,14 +75,15 @@ nav h1:hover{
 .textosHome {
     display: flex;
     flex-direction: column;
-    gap: 15px; 
+    gap: 15px;
+    text-align: start;
+    margin-bottom: 15%;
 }
 
 .home {
     display: flex;
     justify-content: center;
     align-items: center; 
-    background-color: #e5fadb; 
 }
 
 .container {
@@ -87,9 +93,9 @@ nav h1:hover{
 }
 
 #title-home{
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: 8%;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -139,12 +145,6 @@ ul.listaPerguntas{
     margin: 0 auto;
 } */
 
-
-.respostaSimComImg{
-    display: flex;
-    margin-bottom: 50px;
-}
-
 #imgRespSim{
     display: flex;
     justify-content: space-around;
@@ -156,7 +156,7 @@ ul.listaPerguntas{
 
 .sobre-nos {
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px 20px;
     background-color: #141414;
 }
 
@@ -199,9 +199,15 @@ ul.listaPerguntas{
 
 
 .imagem {
-    width: 250px;
+    width: 350px;
     height: auto;
     border-radius: 10px;
+}
+
+.imagem-container{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 30px;
 }
 
 
@@ -305,6 +311,10 @@ p {
 }
 
 /* serviços */
+.servico-breve{
+    color: #8b8b8b;
+    text-decoration: none;
+}
 
 .titulo-servico{
     margin: 50px;
@@ -353,6 +363,7 @@ p {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
+
 /* Noticias ANPD */
 
 .noticia-anpd {
@@ -391,11 +402,18 @@ p {
     color: #0077cc;
     margin-bottom: 5px;
     font-family: 'Poppins', sans-serif;
+    text-align: start;
 }
 
 .noticias p {
-    font-size: 14px;
-    color: #555;
+    text-align: start;
+}
+
+.link-noticia a{
+    font-size: 15px;
+    color: #0077cc;
+    /* text-decoration: none; */
+    text-align: start;
 }
 
 
@@ -448,7 +466,7 @@ footer {
     margin-bottom: 10px;
 }
 
-.footer-links a {
+.padrao-links{
     text-decoration: none;
     color: #ccc;
     font-size: 14px;
@@ -526,7 +544,7 @@ footer {
 .contato-linkedin {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 15px;
     margin-bottom: 25px;
     max-width: 600px;
@@ -558,6 +576,11 @@ footer {
     margin-bottom: 20px;
 }
 
+.contatoF{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .contatos span {
     font-weight: bold;
     color: #007bff; 
@@ -565,7 +588,7 @@ footer {
 
 .contato-linkedin a {
     font-weight: bold;
-    color: #0077b5; 
+    color: #007bff; 
     text-decoration: none;
 }
 
@@ -587,7 +610,7 @@ footer {
     .logoCompleta {
         font-size: 18px;
     }
-  
+    
     #imgLogo {
         width: 50px;
     }
@@ -627,6 +650,18 @@ footer {
         font-size: 16px;
         padding: 10px;
     }
+
+    .conteudo-sim{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .carrossel {
+        max-width: 95%;
+    }
+    .prev, .next {
+        padding: 8px;
+    }
   
     .home {
         text-align: center;
@@ -661,10 +696,10 @@ footer {
     .texto {
         text-align: center;
     }
-  
+    
     .imagem {
         width: 90%;
-        max-width: 250px;
+        max-width: 270px;
     }
 
     .metodo {
