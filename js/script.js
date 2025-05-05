@@ -49,6 +49,8 @@ function mostraErroNoticias() {
 function toggleMenu() {
     const menu = document.querySelector('.lista');
     menu.classList.toggle('show');
+    menu.style.backgroundColor = '#2A465C'
+    
 }
 
 let slideIndex = 0;
