@@ -1,284 +1,406 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IpKnowledge</title>
-    <link rel="shortcut icon" href="ico/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
+    <link rel="shortcut icon" href="ico/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- nav bar -->
 
     <nav>
-        <div class="logoCompleta">
-            <img src="ico/logo.png" alt="logo ipKnowledge" id="imgLogo">
-            <h1>IpKnowledge</h1>
-        </div>
-        <div class="hamburguer" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>          
-        <ul class="lista">
-            <li><a href="#sobre-nos">Sobre nós</a></li>
-            <li><a href="#metodo">Métodos</a></li>
-            <li><a href="#servico">Serviços</a></li>
-            <li><a href="#noticia-anpd">Notícias ANPD</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
+      <div class="logoCompleta">
+        <img src="ico/logo.png" alt="logo ipKnowledge" id="imgLogo" />
+        <h1>IpKnowledge</h1>
+      </div>
+      <div class="hamburguer" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="lista">
+        <li><a href="#sobre-nos">Sobre nós</a></li>
+        <li><a href="#metodo">Métodos</a></li>
+        <li><a href="#servico">Serviços</a></li>
+        <li><a href="#noticia-anpd">Notícias ANPD</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
     </nav>
 
     <!-- home da pagina -->
 
     <section class="home">
-        <div class="container">
-            <div class="textosHome">
-                <h2 id="title-home">Proteja seus <span id="textoVerde">Dados com a IpKnowledge</span> de acordo com a LGPD</h2>
-                    <div class="perguntas">
-                        <h2>Por que você precisa dos nossos serviços?</h2>
-                        <p>Seu condomínio mantém um cadastro de moradores, convidados, terceirizados e fornecedores?</p>
-                        <p>Seu condomínio utiliza biometria para controle de acesso?</p>
-                        <p>Seu condomínio conta com o suporte de uma administradora?</p>
-                    </div>
-                        
-                    <div class="conteudo-sim">
-                        <div class="text-hom">
-                            <h2>Se respondeu 'sim' a alguma dessas perguntas</h2>
-                            <p>Seu condomínio precisa estar em conformidade com a LGPD. Mas não se preocupe! Nós auxiliamos seu condomínio a alcançar essa conformidade em  apenas um mês.</p>
-                        </div>
-                        <!-- <div class="imagem-container">
+      <div class="container">
+        <div class="textosHome">
+          <h2 id="title-home">
+            Proteja seus <span id="textoVerde">Dados com a IpKnowledge</span> de
+            acordo com a LGPD
+          </h2>
+
+          <div class="zika">
+            <div class="zika-container">
+              <img src="imgs/condominio.png" alt="img condominio" />
+              <p class="condominio">LGPD para Condomínios</p>
+              <a href="#servico" class="botao">saiba mais</a>
+            </div>
+
+            <div class="zika-container">
+              <img src="/imgs/ti.png" alt="img tec inf" />
+              <p class="servico-breve">LGPD para área de TI</p>
+              <a href="#servico" class="botao">saiba mais</a>
+            </div>
+
+            <div class="zika-container">
+              <img src="/imgs/saude.png" alt="img saude" />
+              <p class="servico-breve">LGPD para Clínicas de Saúde</p>
+              <a href="#servico" class="botao">saiba mais</a>
+            </div>
+          </div>
+
+          <div class="perguntas">
+            <h2>Por que você precisa dos nossos serviços?</h2>
+            <p>
+              Seu condomínio mantém um cadastro de moradores, convidados,
+              terceirizados e fornecedores?
+            </p>
+            <p>Seu condomínio utiliza biometria para controle de acesso?</p>
+            <p>Seu condomínio conta com o suporte de uma administradora?</p>
+          </div>
+
+          <div class="conteudo-sim">
+            <div class="text-hom">
+              <h2>Se respondeu 'sim' a alguma dessas perguntas</h2>
+              <p>
+                Seu condomínio precisa estar em conformidade com a LGPD. Mas não
+                se preocupe! Nós auxiliamos seu condomínio a alcançar essa
+                conformidade em apenas um mês.
+              </p>
+            </div>
+            <!-- <div class="imagem-container">
                             <img id="imgRespSim" src="./imgs/predio.jpeg" alt="imagem" style="max-width: 290px; margin-top: 20px;">
                         </div> -->
-                    </div>
-                </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- pagina sobre nós -->
 
     <section class="sobre-nos" id="sobre-nos">
-        <h2 class="titulo-sobre">Sobre nós</h2>
+      <h2 class="titulo-sobre">Sobre nós</h2>
 
-        <div class="conteudo">
-            <div class="texto">
-                <h3 class="subtitulo">Consultoria especializada em compliance de processos e sistemas com a LGPD.</h3>
-                <p class="descricao">
-                    Nossa consultoria especializada ajuda sua empresa a se adequar à Lei Geral de Proteção de Dados (LGPD),
-                    garantindo conformidade em processos e sistemas. Realizamos um diagnóstico completo, mapeando dados pessoais
-                    e ajustando processos internos para garantir segurança e privacidade.
-                </p>
-            </div>
-            <img class="imagem" src="./imgs/consultoria.jpg" alt="Consultoria LGPD">
+      <div class="conteudo">
+        <div class="texto">
+          <h3 class="subtitulo">
+            Consultoria especializada em compliance de processos e sistemas com
+            a LGPD.
+          </h3>
+          <p class="descricao">
+            Nossa consultoria especializada ajuda sua empresa a se adequar à Lei
+            Geral de Proteção de Dados (LGPD), garantindo conformidade em
+            processos e sistemas. Realizamos um diagnóstico completo, mapeando
+            dados pessoais e ajustando processos internos para garantir
+            segurança e privacidade.
+          </p>
         </div>
+        <img
+          class="imagem"
+          src="./imgs/consultoria.jpg"
+          alt="Consultoria LGPD"
+        />
+      </div>
 
-        <div class="conteudo">
-            <img class="imagem" src="./imgs/metodos.png" alt="Método em quatro etapas">
-            <div class="texto">
-                <h3 class="subtitulo">Aplicamos um método próprio em quatro etapas, utilizando ferramentas recomendadas pelo governo federal.</h3>
-                <p class="descricao">
-                    Desenvolvemos um método único em quatro etapas para garantir a conformidade e segurança dos seus dados. Utilizando ferramentas 
-                    aprovadas e recomendadas pelo governo federal, ajudamos sua empresa a implementar soluções eficazes e em conformidade com as regulamentações. 
-                    Cada etapa é cuidadosamente planejada para oferecer um acompanhamento completo e resultados consistentes, fortalecendo a proteção de dados e a 
-                    confiança no seu negócio.
-                </p>
-            </div>
+      <div class="conteudo">
+        <img
+          class="imagem"
+          src="./imgs/grafico_etapas.png"
+          alt="Método em quatro etapas"
+        />
+        <div class="texto">
+          <h3 class="subtitulo">
+            Aplicamos um método próprio em quatro etapas, utilizando ferramentas
+            recomendadas pelo governo federal.
+          </h3>
+          <p class="descricao">
+            Desenvolvemos um método único em quatro etapas para garantir a
+            conformidade e segurança dos seus dados. Utilizando ferramentas
+            aprovadas e recomendadas pelo governo federal, ajudamos sua empresa
+            a implementar soluções eficazes e em conformidade com as
+            regulamentações. Cada etapa é cuidadosamente planejada para oferecer
+            um acompanhamento completo e resultados consistentes, fortalecendo a
+            proteção de dados e a confiança no seu negócio.
+          </p>
         </div>
+      </div>
 
-        <div class="botao-container">
-            <a href="#contato" class="botao">Entre em contato</a>
-        </div>
+      <div class="botao-container">
+        <a href="#contato" class="botao">Entre em contato</a>
+      </div>
     </section>
 
     <!-- Pagina metodos -->
 
     <section class="metodo" id="metodo">
-        <h2>Método(4EAL)</h2>
-        <p id="metodo-descricao" class="gradiente">O Método 4EAL é um processo estruturado que visa entregar uma adequação completa à LGPD, garantindo conformidade legal, segurança e eficiência na gestão de dados.<p>
-        
-            <div class="etapas"> 
-                <div class="caixa">
-                    <div class="icone" style="background-color: #5C4DFF;">🤝</div>
-                    <h3>Diagnóstico Inicial</h3>
-                    <p>Nesta fase, é realizado o mapeamento de dados e a avaliação de riscos para identificar vulnerabilidades e oportunidades de melhoria.</p>
-                </div>
-        
-                <div class="caixa">
-                    <div class="icone" style="background-color: #FF33A0;">📑</div>
-                    <h3>Plano de ação personalizado</h3>
-                    <p>Com base no diagnóstico, é elaborado um plano estratégico com políticas e adequações específicas para atender às necessidades da empresa.</p>
-                </div>
-        
-                <div class="caixa">
-                    <div class="icone" style="background-color: #33C5FF;">📋</div>
-                    <h3>Execução e treinamento</h3>
-                    <p>A execução e treinamento envolvem a aplicação das medidas planejadas e a capacitação da equipe, garantindo que todos os envolvidos estejam preparados.</p>
-                </div>
-        
-                <div class="caixa">
-                    <div class="icone" style="background-color: #33FFA3;">🔄</div>
-                    <h3>Acompanhamento contínuo</h3>
-                    <p>Para assegurar que as melhorias sejam mantidas e aprimoradas, há um monitoramento constante e suporte contínuo.</p>
-                </div>
-            </div>
+      <h2>Método(4EAL)</h2>
+      <p id="metodo-descricao" class="gradiente">
+        O Método 4EAL é um processo estruturado que visa entregar uma adequação
+        completa à LGPD, garantindo conformidade legal, segurança e eficiência
+        na gestão de dados.
+      </p>
+      <p></p>
+
+      <div class="etapas">
+        <div class="caixa">
+          <div class="icone" style="background-color: #5c4dff">🤝</div>
+          <h3>Diagnóstico Inicial</h3>
+          <p>
+            Nesta fase, é realizado o mapeamento de dados e a avaliação de
+            riscos para identificar vulnerabilidades e oportunidades de
+            melhoria.
+          </p>
+        </div>
+
+        <div class="caixa">
+          <div class="icone" style="background-color: #ff33a0">📑</div>
+          <h3>Plano de ação personalizado</h3>
+          <p>
+            Com base no diagnóstico, é elaborado um plano estratégico com
+            políticas e adequações específicas para atender às necessidades da
+            empresa.
+          </p>
+        </div>
+
+        <div class="caixa">
+          <div class="icone" style="background-color: #33c5ff">📋</div>
+          <h3>Execução e treinamento</h3>
+          <p>
+            A execução e treinamento envolvem a aplicação das medidas planejadas
+            e a capacitação da equipe, garantindo que todos os envolvidos
+            estejam preparados.
+          </p>
+        </div>
+
+        <div class="caixa">
+          <div class="icone" style="background-color: #33ffa3">🔄</div>
+          <h3>Acompanhamento contínuo</h3>
+          <p>
+            Para assegurar que as melhorias sejam mantidas e aprimoradas, há um
+            monitoramento constante e suporte contínuo.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- pagina serviços -->
 
     <section class="servicos" id="servico">
-        <h2 class="titulo-servico">Serviços e área de atuação</h2>
-        <div class="container-servico">
-            <div class="caixa-servico">
-                <h3>Aderência de condomínios à LGPD (emexecução)</h3>
-                <p>Condomínios lidam com dados de moradores e visitantes, exigindo medidas de segurança e controle no tratamento dessas informações para garantir privacidade e evitar sanções.</p>
-            </div>
-                
-            <div class="caixa-servico">
-                <h3 class="servico-breve">Aderência da área de tecnologia da informação à LGPD (em breve)</h3>
-                <p>Empresas de TI precisam adotar práticas de segurança, controle de acessos e criptografia para proteger dados e garantir conformidade com a LGPD.</p>
-            </div>
-    
-            <div class="caixa-servico">
-                <h3 class="servico-breve">Aderência de clínicas de saúde à LGPD (em breve)</h3>
-                <p>Clínicas armazenam dados sensíveis de pacientes e devem implementar políticas de proteção, consentimento adequado e segurança na gestão dessas informações.</p>
-            </div>
+      <h2 class="titulo-servico">Serviços e área de atuação</h2>
+      <div class="container-servico">
+        <div class="caixa-servico">
+          <h3>Aderência de condomínios à LGPD (emexecução)</h3>
+          <p>
+            Condomínios lidam com dados de moradores e visitantes, exigindo
+            medidas de segurança e controle no tratamento dessas informações
+            para garantir privacidade e evitar sanções.
+          </p>
         </div>
+
+        <div class="caixa-servico">
+          <h3 class="servico-breve">
+            Aderência da área de tecnologia da informação à LGPD (em breve)
+          </h3>
+          <p>
+            Empresas de TI precisam adotar práticas de segurança, controle de
+            acessos e criptografia para proteger dados e garantir conformidade
+            com a LGPD.
+          </p>
+        </div>
+
+        <div class="caixa-servico">
+          <h3 class="servico-breve">
+            Aderência de clínicas de saúde à LGPD (em breve)
+          </h3>
+          <p>
+            Clínicas armazenam dados sensíveis de pacientes e devem implementar
+            políticas de proteção, consentimento adequado e segurança na gestão
+            dessas informações.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Noticias ANPD -->
 
     <section class="noticia-anpd" id="noticia-anpd">
-        <h2>Ultimas Notícias ANPD</h2>
+      <h2>Ultimas Notícias ANPD</h2>
 
-        <div class="noticias">
-            <h3 class="titulo-noticia"></h3>
-            <p class="link-noticia"></p>
-        </div>
+      <div class="noticias">
+        <h3 class="titulo-noticia"></h3>
+        <p class="link-noticia"></p>
+      </div>
 
-        <div class="noticias">
-            <h3 class="titulo-noticia"></h3>
-            <p class="link-noticia"></p>
-        </div>
+      <div class="noticias">
+        <h3 class="titulo-noticia"></h3>
+        <p class="link-noticia"></p>
+      </div>
 
-        <div class="noticias">
-            <h3 class="titulo-noticia"></h3>
-            <p class="link-noticia"></p>
-        </div>
+      <div class="noticias">
+        <h3 class="titulo-noticia"></h3>
+        <p class="link-noticia"></p>
+      </div>
 
-        <div class="noticias">
-            <h3 class="titulo-noticia"></h3>
-            <p class="link-noticia"></p>
-        </div>
+      <div class="noticias">
+        <h3 class="titulo-noticia"></h3>
+        <p class="link-noticia"></p>
+      </div>
 
-        <div class="noticias">
-            <h3 class="titulo-noticia"></h3>
-            <p class="link-noticia"></p>
-        </div>
+      <div class="noticias">
+        <h3 class="titulo-noticia"></h3>
+        <p class="link-noticia"></p>
+      </div>
 
-        <div class="noticias">
-            <h3 class="titulo-noticia"></h3>
-            <p class="link-noticia"></p>
-        </div>
+      <div class="noticias">
+        <h3 class="titulo-noticia"></h3>
+        <p class="link-noticia"></p>
+      </div>
 
-        <!-- <div class="noticias">
-            <h3 class="titulo-noticia"></h3>
-            <p class="link-noticia"></p>
-        </div> -->
-
-        <!-- <div class="noticias">
+      <!-- <div class="noticias">
             <h3 class="titulo-noticia"></h3>
             <p class="link-noticia"></p>
         </div> -->
 
-        <!-- <div class="noticias">
+      <!-- <div class="noticias">
             <h3 class="titulo-noticia"></h3>
             <p class="link-noticia"></p>
         </div> -->
 
-        <!-- <div class="noticias">
+      <!-- <div class="noticias">
             <h3 class="titulo-noticia"></h3>
             <p class="link-noticia"></p>
         </div> -->
 
-        <!-- <div class="noticias">
+      <!-- <div class="noticias">
             <h3 class="titulo-noticia"></h3>
             <p class="link-noticia"></p>
         </div> -->
-        
+
+      <!-- <div class="noticias">
+            <h3 class="titulo-noticia"></h3>
+            <p class="link-noticia"></p>
+        </div> -->
     </section>
 
     <!-- Contatos -->
 
     <section class="contatos" id="contato">
-        <h2 class="title-contatos">Entre em contato e descubra como podemos contribuir para o seu negócio</h2>
-        <p>Envie sua mensagem e vamos trabalhar juntos na conformidade do seu condomínio com a LGPD.</p>
-        <div class="contato-whatsapp">
-            <ion-icon name="logo-whatsapp" class="contato-icon"></ion-icon>
-            <p class="contatoF">Fale conosco pelo WhatsApp: <span>(48) 99156-9446</span></p>
-        </div>
-    
-        <div class="contato-email">
-            <ion-icon name="mail-outline" class="contato-icon"></ion-icon>
-            <p class="contatoF">Envie-nos um e-mail: <span>contato@ipknowledge.com.br</span></p>
-        </div>
-    
-        <div class="contato-linkedin">
-            <ion-icon name="logo-linkedin" class="contato-icon"></ion-icon>
-            <p class="contatoF">Conecte-se no LinkedIn: <a href="https://www.linkedin.com/in/jaimemjunior/" target="_blank">linkedin.com/in/jaimemjunior</a></p>
-        </div>
+      <h2 class="title-contatos">
+        Entre em contato e descubra como podemos contribuir para o seu negócio
+      </h2>
+      <p>
+        Envie sua mensagem e vamos trabalhar juntos na conformidade do seu
+        condomínio com a LGPD.
+      </p>
+      <div class="contato-whatsapp">
+        <ion-icon name="logo-whatsapp" class="contato-icon"></ion-icon>
+        <p class="contatoF">
+          Fale conosco pelo WhatsApp: <span>(48) 99156-9446</span>
+        </p>
+      </div>
+
+      <div class="contato-email">
+        <ion-icon name="mail-outline" class="contato-icon"></ion-icon>
+        <p class="contatoF">
+          Envie-nos um e-mail: <span>contato@ipknowledge.com.br</span>
+        </p>
+      </div>
+
+      <div class="contato-linkedin">
+        <ion-icon name="logo-linkedin" class="contato-icon"></ion-icon>
+        <p class="contatoF">
+          Conecte-se no LinkedIn:
+          <a href="https://www.linkedin.com/in/jaimemjunior/" target="_blank"
+            >linkedin.com/in/jaimemjunior</a
+          >
+        </p>
+      </div>
     </section>
 
     <!-- footer -->
 
     <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <a href="#" style="text-decoration: none;"><h3>Missão</h3></a>
-                <p>
-                    Apoiamos organizações na adequação à Lei Geral de Proteção de Dados (LGPD), implementando processos e sistemas que garantem conformidade legal, segurança e privacidade dos dados pessoais.
-                </p>
-            
-            </div>
-    
-            <div class="footer-section">
-                <h3>Ipknowledge</h3>
-                <ul class="footer-links">
-                    <li><a class="padrao-links" href="#">Home</a></li>
-                    <li><a class="padrao-links" href="#sobre-nos">Sobre nós</a></li>
-                    <li><a class="padrao-links" href="#">Suporte</a></li>
-                    <li><a class="padrao-links" href="#contato">Entre em contato</a></li>
-                </ul>
-            </div>
-    
-            <div class="footer-section">
-                <h3>Serviços</h3>
-                <ul class="footer-links">
-                    <li><a class="padrao-links" href="#servico">Aderência de condomínios à LGPD</a></li>
-                    <li><a class="servico-breve" href="#servico">Aderência da área da informação à LGPD</a></li>
-                    <li><a class="servico-breve" href="#servico">Aderência de clínicas de saúde à LGPD</a></li>
-                </ul>
-            </div>
-    
-            <!-- <div class="footer-section">
+      <div class="footer-container">
+        <div class="footer-section">
+          <a href="#" style="text-decoration: none"><h3>Missão</h3></a>
+          <p>
+            Apoiamos organizações na adequação à Lei Geral de Proteção de Dados
+            (LGPD), implementando processos e sistemas que garantem conformidade
+            legal, segurança e privacidade dos dados pessoais.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Ipknowledge</h3>
+          <ul class="footer-links">
+            <li><a class="padrao-links" href="#">Home</a></li>
+            <li><a class="padrao-links" href="#sobre-nos">Sobre nós</a></li>
+            <li><a class="padrao-links" href="#">Suporte</a></li>
+            <li>
+              <a class="padrao-links" href="#contato">Entre em contato</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Serviços</h3>
+          <ul class="footer-links">
+            <li>
+              <a class="padrao-links" href="#servico"
+                >Aderência de condomínios à LGPD</a
+              >
+            </li>
+            <li>
+              <a class="servico-breve" href="#servico"
+                >Aderência da área da informação à LGPD</a
+              >
+            </li>
+            <li>
+              <a class="servico-breve" href="#servico"
+                >Aderência de clínicas de saúde à LGPD</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- <div class="footer-section">
                 <h3>Legal</h3>
                 <ul class="footer-links">
                     <li><a href="/html/termos.html">Termos & Condições</a></li>
                     <li><a href="/html/politica-privacidade.html">Privacidade & politica</a></li>
                 </ul>
             </div> -->
-        </div>
-        
-        <div class="footer-bottom">
-            &copy; 2025 IpKnowledge || Todos os direitos reservados. <a href="./html/termos.html">IpKnowledge</a>
-        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 IpKnowledge || Todos os direitos reservados.
+        <a href="./html/termos.html">IpKnowledge</a>
+      </div>
     </footer>
-    
+
     <!-- links js -->
     <script src="js/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

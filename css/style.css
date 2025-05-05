@@ -1,136 +1,171 @@
 html {
-    scroll-behavior: smooth;
-    font-family: 'Montserrat', sans-serif;
-  }
-
-body {
-    background-color: white;
-    margin: 0;
-    background-color: #edffe9;
-    overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
 }
 
+body {
+  background-color: white;
+  margin: 0;
+  background-color: #edffe9;
+  overflow-x: hidden;
+}
 
 /* home */
 
 #imgRespSim {
-    width: 190px;
-    margin-top: 10px;
+  width: 190px;
+  margin-top: 10px;
+}
+
+.zika {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.zika-container {
+  background-color: transparent;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.zika-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.zika-container img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 9px;
+}
+
+.zika .condominio {
+  font-weight: 700;
+  color: #000;
+}
+
+.servico-breve {
+  color: #555;
 }
 
 nav {
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #141414;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2a465c;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-nav h1{
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+nav h1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
 }
 
 .logoCompleta {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
 }
 
-nav h1:hover{
-    color: #B3C853;
+nav h1:hover {
+  color: #b3c853;
 }
 
 #imgLogo {
-    width: 60px;
+  width: 60px;
 }
 
 .lista {
-    display: flex;
-    list-style: none;
-    gap: 15px;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
 }
 
 .lista li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 17px;
-    padding: 8px 12px;
-    transition: 0.3s;
-    border-radius: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 17px;
+  padding: 8px 12px;
+  transition: 0.3s;
+  border-radius: 10px;
 }
 
 .lista li a:hover {
-    color: #B3C853;
+  color: #b3c853;
 }
 
-#textoVerde{
-    color: rgb(54, 201, 54);
+#textoVerde {
+  color: rgb(54, 201, 54);
 }
 
 .textosHome {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    text-align: start;
-    margin-bottom: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: start;
+  margin-bottom: 15%;
 }
 
 .home {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-    max-width: 700px;
-    width: 80%; 
-    text-align: center;
+  max-width: 700px;
+  width: 80%;
+  text-align: center;
 }
 
-#title-home{
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 8%;
-    font-family: 'Montserrat', sans-serif;
+#title-home {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 8%;
+  font-family: "Montserrat", sans-serif;
 }
 
 .home h3 {
-    margin-bottom: 0px;
-    font-size: 25px;
-    font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0px;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
 }
 
-ul.listaPerguntas{
-    padding-inline-start:5%;
-    padding-inline-end: 5%;
+ul.listaPerguntas {
+  padding-inline-start: 5%;
+  padding-inline-end: 5%;
 }
 
-.listaPerguntas p{
-    text-align: left;
-    font-size: 20px;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    color: #000;
+.listaPerguntas p {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #000;
 }
 
 .caixa2 {
-    justify-content: center;
-    background-color: #fff;
-    width: 690px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  justify-content: center;
+  background-color: #fff;
+  width: 690px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .caixa2:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* .gradiente {
@@ -145,336 +180,329 @@ ul.listaPerguntas{
     margin: 0 auto;
 } */
 
-#imgRespSim{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
+#imgRespSim {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
 }
 
 /* sobre nos */
 
 .sobre-nos {
-    text-align: center;
-    padding: 20px 20px;
-    background-color: #141414;
+  text-align: center;
+  padding: 20px 20px;
+  background-color: #2a465c;
 }
 
 .titulo-sobre {
-    font-size: 40px;
-    color: #74ff00;
-    margin-bottom: 30px;
-    font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  color: #74ff00;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
 }
 
-
 .conteudo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
 
 .texto {
-    max-width: 500px;
-    text-align: left;
+  max-width: 500px;
+  text-align: left;
 }
 
 .subtitulo {
-    color: #74ff00;
-    font-size: 28px;
-    margin-bottom: 10px;
-    font-family: 'Montserrat', sans-serif;
+  color: #74ff00;
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .descricao {
-    font-size: 17px;
-    line-height: 1.6;
-    color: white;
-    font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
-
 
 .imagem {
-    width: 350px;
-    height: auto;
-    border-radius: 10px;
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
 }
 
-.imagem-container{
-    display: flex;
-    justify-content: start;
-    margin-bottom: 30px;
+.imagem-container {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 30px;
 }
-
 
 .botao-container {
-    text-align: center;
-    margin-top: 20px;
-    font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
 .botao {
-    display: inline-block;
-    background-color: #74ff00;
-    color: #000;
-    padding: 10px 20px;
-    font-size: 14px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+  display: inline-block;
+  background-color: #74ff00;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 .botao:hover {
-    background-color: #5dcc00;
+  background-color: #5dcc00;
 }
 
 /* Metodo */
 
 .metodo {
-    text-align: center; 
-    max-width: 800px; 
-    margin: 0 auto; 
-    padding: 20px; 
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .metodo h2 {
-    font-size: 40px; 
-    font-weight: bold; 
-    color: #333; 
-    margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .metodo p {
-    font-size: 16px;
-    color: #555; 
-    line-height: 1.6;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
 }
 
-#metodo-descricao{
-    font-size: 25px;
+#metodo-descricao {
+  font-size: 25px;
 }
 
 .etapas {
-    display: flex;
-    justify-content: center; 
-    gap: 20px; 
-    flex-wrap: wrap; 
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-
 .caixa {
-    background-color: #fff;
-    width: 280px;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  width: 280px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .caixa:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-
 .icone {
-    width: 60px;
-    height: 60px;
-    background-color: #5C4DFF;
-    color: white;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin: 0 auto 15px;
+  width: 60px;
+  height: 60px;
+  background-color: #5c4dff;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 15px;
 }
 
 h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 p {
-    font-size: 14px;
-    color: #555;
-    line-height: 1.5;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
 }
 
 /* serviços */
-.servico-breve{
-    color: #8b8b8b;
-    text-decoration: none;
+.servico-breve {
+  color: #8b8b8b;
+  text-decoration: none;
 }
 
-.titulo-servico{
-    margin: 50px;
-    font-size: 40px; 
-    font-weight: bold; 
-    color: #333;
-    font-family: 'Montserrat', sans-serif;
+.titulo-servico {
+  margin: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
 }
 
-.servicos{
-    text-align: center; 
-    max-width: 900px; 
-    margin: 0 auto; 
-    padding: 20px; 
+.servicos {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.container-servico{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-
+.container-servico {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
-.caixa-servico h3{
-    font-size: 17px;
-    font-family: 'Montserrat', sans-serif;
+.caixa-servico h3 {
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
 }
 
-.caixa-servico p{
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
+.caixa-servico p {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
 }
 
-.caixa-servico{
-    background-color: #fff;
-    width: 300px;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.caixa-servico {
+  background-color: #fff;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .caixa-servico:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
-
 
 /* Noticias ANPD */
 
 .noticia-anpd {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .noticia-anpd h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
 }
 
 .noticias {
-    background: white;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
 }
 
 .noticias:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .noticias h3 {
-    font-size: 18px;
-    color: #0077cc;
-    margin-bottom: 5px;
-    font-family: 'Poppins', sans-serif;
-    text-align: start;
+  font-size: 18px;
+  color: #0077cc;
+  margin-bottom: 5px;
+  font-family: "Poppins", sans-serif;
+  text-align: start;
 }
 
 .noticias p {
-    text-align: start;
+  text-align: start;
 }
 
-.link-noticia a{
-    font-size: 15px;
-    color: #0077cc;
-    /* text-decoration: none; */
-    text-align: start;
+.link-noticia a {
+  font-size: 15px;
+  color: #0077cc;
+  /* text-decoration: none; */
+  text-align: start;
 }
-
 
 /* footer */
 
 footer {
-    background-color: #141414;
-    color: white;
-    padding: 50px 20px;
-    display: flex;
-    justify-content: space-between;
-    /* align-items: flex-start; */
-    flex-wrap: wrap;
+  background-color: #2a465c;
+  /* background-color: #141414;  cor preta dos fundos antiga */
+  color: white;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  flex-wrap: wrap;
 }
 
 .footer-container {
-    font-family: 'Raleway', sans-serif;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  font-family: "Raleway", sans-serif;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .footer-section {
-    max-width: 300px;
+  max-width: 300px;
 }
 
 .footer-section h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #74ff00;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #74ff00;
 }
 
 .footer-section p {
-    font-size: 14px;
-    line-height: 1.6;
-    color: #ccc;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
 }
 
 .footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-links li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-.padrao-links{
-    text-decoration: none;
-    color: #ccc;
-    font-size: 14px;
-    transition: 0.3s;
+.padrao-links {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+  transition: 0.3s;
 }
 
 .footer-links a:hover {
-    color: #B3C853;
+  color: #b3c853;
 }
 
 /* .social-icons {
@@ -494,302 +522,302 @@ footer {
 } */
 
 .footer-bottom {
-    width: 100%;
-    text-align: center;
-    margin-top: 40px;
-    padding-top: 10px;
-    border-top: 1px solid #222;
-    flex-basis: 100%; 
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 10px;
+  border-top: 1px solid #222;
+  flex-basis: 100%;
 }
 
-
 .footer-bottom a {
-    color: #B3C853;
-    text-decoration: none;
-    font-weight: bold;
+  color: #b3c853;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .footer-bottom a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* pagina contatos */
 
 .contatos {
-    padding: 60px 20px;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-    color: #333;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  color: #333;
 }
 
 .contato-icon {
-    width: 50px;
-    height: 35px;
+  width: 50px;
+  height: 35px;
 }
 
-.contatos h2{
-    font-size: 35px;
-    font-family: 'Montserrat', sans-serif;
+.contatos h2 {
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .title-contatos {
-    font-size: 40px;
-    font-weight: 600;
-    margin-bottom: 28px;
-    color: #1a1a1a;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 28px;
+  color: #1a1a1a;
 }
 
 .contato-whatsapp,
 .contato-email,
 .contato-linkedin {
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    gap: 15px;
-    margin-bottom: 25px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #ffffff;
-    padding: 15px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 15px;
+  margin-bottom: 25px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
 }
 
 .contato-whatsapp:hover,
 .contato-email:hover,
 .contato-linkedin:hover {
-    transform: scale(1.02); 
+  transform: scale(1.02);
 }
 
 .contato-whatsapp img,
 .contato-email img,
 .contato-linkedin img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 .contatos p {
-    font-size: 20px;
-    margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
-.contatoF{
-    display: flex;
-    flex-wrap: wrap;
+.contatoF {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contatos span {
-    font-weight: bold;
-    color: #007bff; 
+  font-weight: bold;
+  color: #007bff;
 }
 
 .contato-linkedin a {
-    font-weight: bold;
-    color: #007bff; 
-    text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
 }
 
 .contato-linkedin a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* responsividade */
 
 @media (max-width: 999px) {
-
-    nav {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 10px 15px;
-        position: relative;
-    }
-  
-    .logoCompleta {
-        font-size: 18px;
-    }
-    
-    #imgLogo {
-        width: 50px;
-    }
-  
-    /* Menu Hambúrguer */
-    .hamburguer {
-        display: block;
-        cursor: pointer;
-    }
-  
-    .hamburguer div {
-        width: 25px;
-        height: 3px;
-        background-color: #fff;
-        margin: 5px 0;
-        transition: 0.4s;
-    }
-  
-    .lista {
-        display: none;
-        position: absolute;
-        top: 60px;
-        right: 15px;
-        background-color: #141414;
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-  
-    .lista.show {
-        display: flex;
-    }
-  
-    .lista li a {
-        font-size: 16px;
-        padding: 10px;
-    }
-
-    .conteudo-sim{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .carrossel {
-        max-width: 95%;
-    }
-    .prev, .next {
-        padding: 8px;
-    }
-  
-    .home {
-        text-align: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-  
-    #title-home {
-        font-size: 32px;
-    }
-  
-    .home h3 {
-        font-size: 20px;
-    }
-  
-    .caixa2 {
-        width: 95%;
-    }
-  
-    .respostaSimComImg {
-        flex-direction: column;
-        margin-bottom: 30px;
-        align-items: center;
-    }
-  
-    .conteudo {
-        flex-direction: column;
-        gap: 15px;
-        padding: 10px;
-    }
-  
-    .texto {
-        text-align: center;
-    }
-    
-    .imagem {
-        width: 90%;
-        max-width: 270px;
-    }
-
-    .metodo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-    }
-  
-    .caixa, .caixa-servico {
-        width: 100%;
-        max-width: 320px;
-    }
-  
-    .container-servico {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .titulo-servico {
-        font-size: 30px;
-        margin: 20px 0;
-    }
-  
-    .noticia-anpd h2 {
-        font-size: 22px;
-    }
-  
-    .noticias h3 {
-        font-size: 16px;
-    }
-  
-    .noticias p {
-        font-size: 13px;
-    }
-  
-    footer {
-        flex-direction: column;
-        align-items: center;
-        padding: 30px 10px;
-        display: flex;
-        text-align: center;
-    }
-  
-    .footer-section {
-        text-align: center;
-        margin-bottom: 20px;
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .footer-section ul {
-        padding: 0;
-        list-style: none;
-        text-align: center;
-    }
-
-    .footer-section h3 {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-  
-    .contato-whatsapp,
-    .contato-email,
-    .contato-linkedin {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .footer-section p{
-        text-align: center;
-    }
-  
-    .contatos h2 {
-        font-size: 28px;
-    }
-  
-    .title-contatos {
-        font-size: 32px;
-    }
-  
-    .contatos p {
-        font-size: 18px;
-    }
-  
-    .footer-bottom {
-        font-size: 14px;
-        text-align: center;
-        padding-top: 10px;
-    }
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+    position: relative;
   }
-  
+
+  .logoCompleta {
+    font-size: 18px;
+  }
+
+  #imgLogo {
+    width: 50px;
+  }
+
+  /* Menu Hambúrguer */
+  .hamburguer {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburguer div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .lista {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    background-color: #141414;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .lista.show {
+    display: flex;
+  }
+
+  .lista li a {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .conteudo-sim {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .prev,
+  .next {
+    padding: 8px;
+  }
+
+  .home {
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #title-home {
+    font-size: 32px;
+  }
+
+  .home h3 {
+    font-size: 20px;
+  }
+
+  .zika {
+    flex-wrap: wrap;
+  }
+
+  .caixa2 {
+    width: 95%;
+  }
+
+  .respostaSimComImg {
+    flex-direction: column;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+
+  .conteudo {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .texto {
+    text-align: center;
+  }
+
+  .imagem {
+    width: 90%;
+    max-width: 270px;
+  }
+
+  .metodo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .caixa,
+  .caixa-servico {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .container-servico {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .titulo-servico {
+    font-size: 30px;
+    margin: 20px 0;
+  }
+
+  .noticia-anpd h2 {
+    font-size: 22px;
+  }
+
+  .noticias h3 {
+    font-size: 16px;
+  }
+
+  .noticias p {
+    font-size: 13px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+    display: flex;
+    text-align: center;
+  }
+
+  .footer-section {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer-section ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .contato-whatsapp,
+  .contato-email,
+  .contato-linkedin {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-section p {
+    text-align: center;
+  }
+
+  .contatos h2 {
+    font-size: 28px;
+  }
+
+  .title-contatos {
+    font-size: 32px;
+  }
+
+  .contatos p {
+    font-size: 18px;
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 10px;
+  }
+}
