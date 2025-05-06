@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -47,45 +47,23 @@
             <div class="zika-container">
               <img src="imgs/condominio.png" alt="img condominio" />
               <p class="condominio">LGPD para Condomínios</p>
-              <a href="#servico" class="botao">saiba mais</a>
+              <a href="#servico" class="botao">Saiba Mais</a>
             </div>
 
             <div class="zika-container">
               <img src="/imgs/ti.png" alt="img tec inf" />
               <p class="servico-breve">LGPD para área de TI</p>
-              <a href="#servico" class="botao">saiba mais</a>
+              <a href="#servico" class="botao-breve">Em Breve</a>
             </div>
 
             <div class="zika-container">
               <img src="/imgs/saude.png" alt="img saude" />
               <p class="servico-breve">LGPD para Clínicas de Saúde</p>
-              <a href="#servico" class="botao">saiba mais</a>
+              <a href="#servico" class="botao-breve">Em Breve</a>
             </div>
           </div>
 
-          <div class="perguntas">
-            <h2>Por que você precisa dos nossos serviços?</h2>
-            <p>
-              Seu condomínio mantém um cadastro de moradores, convidados,
-              terceirizados e fornecedores?
-            </p>
-            <p>Seu condomínio utiliza biometria para controle de acesso?</p>
-            <p>Seu condomínio conta com o suporte de uma administradora?</p>
-          </div>
-
-          <div class="conteudo-sim">
-            <div class="text-hom">
-              <h2>Se respondeu 'sim' a alguma dessas perguntas</h2>
-              <p>
-                Seu condomínio precisa estar em conformidade com a LGPD. Mas não
-                se preocupe! Nós auxiliamos seu condomínio a alcançar essa
-                conformidade em apenas um mês.
-              </p>
-            </div>
-            <!-- <div class="imagem-container">
-                            <img id="imgRespSim" src="./imgs/predio.jpeg" alt="imagem" style="max-width: 290px; margin-top: 20px;">
-                        </div> -->
-          </div>
+         
         </div>
       </div>
     </section>
@@ -201,16 +179,43 @@
 
     <section class="servicos" id="servico">
       <h2 class="titulo-servico">Serviços e área de atuação</h2>
-      <div class="container-servico">
-        <div class="caixa-servico">
-          <h3>Aderência de condomínios à LGPD (emexecução)</h3>
+    
+      <!-- PRIMEIRA CAIXA DESTACADA NO TOPO -->
+      <details class="caixa-servico">
+        <summary>
+          Aderência de condomínios à LGPD (em execução)
           <p>
             Condomínios lidam com dados de moradores e visitantes, exigindo
             medidas de segurança e controle no tratamento dessas informações
             para garantir privacidade e evitar sanções.
           </p>
+        </summary>
+        <div>
+          <div class="perguntas">
+            <h2>Por que você precisa dos nossos serviços?</h2>
+            <p>
+              Seu condomínio mantém um cadastro de moradores, convidados,
+              terceirizados e fornecedores?
+            </p>
+            <p>Seu condomínio utiliza biometria para controle de acesso?</p>
+            <p>Seu condomínio conta com o suporte de uma administradora?</p>
+          </div>
+    
+          <div class="conteudo-sim">
+            <div class="text-home">
+              <h2>Se respondeu 'sim' a alguma dessas perguntas</h2>
+              <p>
+                Seu condomínio precisa estar em conformidade com a LGPD. Mas não
+                se preocupe! Nós auxiliamos seu condomínio a alcançar essa
+                conformidade em apenas um mês.
+              </p>
+            </div>
+          </div>
         </div>
-
+      </details>
+    
+      <!-- CONTÊINER DAS DUAS CAIXAS ABAIXO -->
+      <div class="linha-inferior-servicos">
         <div class="caixa-servico">
           <h3 class="servico-breve">
             Aderência da área de tecnologia da informação à LGPD (em breve)
@@ -221,7 +226,7 @@
             com a LGPD.
           </p>
         </div>
-
+    
         <div class="caixa-servico">
           <h3 class="servico-breve">
             Aderência de clínicas de saúde à LGPD (em breve)
